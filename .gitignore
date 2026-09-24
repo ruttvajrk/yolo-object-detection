@@ -3,3 +3,4 @@ __pycache__/
 datasets/
 *.mp4
 .ipynb_checkpoints/
+.venv/
