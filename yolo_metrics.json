@@ -1,0 +1,47 @@
+{
+  "base_model": "yolov8n.pt (COCO-pretrained)",
+  "dataset": "african-wildlife.yaml",
+  "classes": [
+    "buffalo",
+    "elephant",
+    "rhino",
+    "zebra"
+  ],
+  "epochs": 30,
+  "image_size": 640,
+  "validation": {
+    "precision": 0.935,
+    "recall": 0.92,
+    "mAP50": 0.959,
+    "mAP50_95": 0.8,
+    "per_class_mAP50_95": {
+      "buffalo": 0.821,
+      "elephant": 0.776,
+      "rhino": 0.845,
+      "zebra": 0.757
+    }
+  },
+  "test": {
+    "precision": 0.966,
+    "recall": 0.927,
+    "mAP50": 0.971,
+    "mAP50_95": 0.826,
+    "per_class_mAP50_95": {
+      "buffalo": 0.856,
+      "elephant": 0.789,
+      "rhino": 0.908,
+      "zebra": 0.751
+    }
+  },
+  "speed": {
+    "cpu": {
+      "avg_ms_per_image": 117.7,
+      "fps": 8.5
+    },
+    "gpu": {
+      "avg_ms_per_image": 12.3,
+      "fps": 81.4
+    },
+    "gpu_name": "Tesla T4"
+  }
+}

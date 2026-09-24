@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+datasets/
+*.mp4
+.ipynb_checkpoints/
