@@ -1,0 +1,271 @@
+{
+  "weights": "runs/detect/runs/finetune/weights/best.pt",
+  "leaked_images_removed": {
+    "val": 8,
+    "test": 21
+  },
+  "map": {
+    "val": {
+      "precision": 0.935,
+      "recall": 0.92,
+      "mAP50": 0.959,
+      "mAP50_95": 0.8,
+      "per_class_mAP50_95": {
+        "buffalo": 0.821,
+        "elephant": 0.776,
+        "rhino": 0.845,
+        "zebra": 0.757
+      }
+    },
+    "test": {
+      "precision": 0.966,
+      "recall": 0.927,
+      "mAP50": 0.971,
+      "mAP50_95": 0.826,
+      "per_class_mAP50_95": {
+        "buffalo": 0.856,
+        "elephant": 0.789,
+        "rhino": 0.908,
+        "zebra": 0.751
+      }
+    },
+    "val_clean": {
+      "precision": 0.934,
+      "recall": 0.917,
+      "mAP50": 0.961,
+      "mAP50_95": 0.796,
+      "per_class_mAP50_95": {
+        "buffalo": 0.812,
+        "elephant": 0.779,
+        "rhino": 0.841,
+        "zebra": 0.754
+      }
+    },
+    "test_clean": {
+      "precision": 0.955,
+      "recall": 0.919,
+      "mAP50": 0.968,
+      "mAP50_95": 0.819,
+      "per_class_mAP50_95": {
+        "buffalo": 0.839,
+        "elephant": 0.787,
+        "rhino": 0.904,
+        "zebra": 0.747
+      }
+    }
+  },
+  "counting": {
+    "threshold_chosen_on_val": 0.65,
+    "val_curve": [
+      {
+        "conf": 0.1,
+        "mean_abs_count_error_per_image": 0.641,
+        "images_with_exact_counts": 0.682
+      },
+      {
+        "conf": 0.15,
+        "mean_abs_count_error_per_image": 0.488,
+        "images_with_exact_counts": 0.7143
+      },
+      {
+        "conf": 0.2,
+        "mean_abs_count_error_per_image": 0.401,
+        "images_with_exact_counts": 0.7512
+      },
+      {
+        "conf": 0.25,
+        "mean_abs_count_error_per_image": 0.378,
+        "images_with_exact_counts": 0.7604
+      },
+      {
+        "conf": 0.3,
+        "mean_abs_count_error_per_image": 0.327,
+        "images_with_exact_counts": 0.7742
+      },
+      {
+        "conf": 0.35,
+        "mean_abs_count_error_per_image": 0.309,
+        "images_with_exact_counts": 0.7696
+      },
+      {
+        "conf": 0.4,
+        "mean_abs_count_error_per_image": 0.304,
+        "images_with_exact_counts": 0.7696
+      },
+      {
+        "conf": 0.45,
+        "mean_abs_count_error_per_image": 0.295,
+        "images_with_exact_counts": 0.7742
+      },
+      {
+        "conf": 0.5,
+        "mean_abs_count_error_per_image": 0.272,
+        "images_with_exact_counts": 0.788
+      },
+      {
+        "conf": 0.55,
+        "mean_abs_count_error_per_image": 0.272,
+        "images_with_exact_counts": 0.7788
+      },
+      {
+        "conf": 0.6,
+        "mean_abs_count_error_per_image": 0.267,
+        "images_with_exact_counts": 0.7788
+      },
+      {
+        "conf": 0.65,
+        "mean_abs_count_error_per_image": 0.267,
+        "images_with_exact_counts": 0.7926
+      },
+      {
+        "conf": 0.7,
+        "mean_abs_count_error_per_image": 0.276,
+        "images_with_exact_counts": 0.7926
+      },
+      {
+        "conf": 0.75,
+        "mean_abs_count_error_per_image": 0.318,
+        "images_with_exact_counts": 0.7742
+      },
+      {
+        "conf": 0.8,
+        "mean_abs_count_error_per_image": 0.369,
+        "images_with_exact_counts": 0.7419
+      },
+      {
+        "conf": 0.85,
+        "mean_abs_count_error_per_image": 0.406,
+        "images_with_exact_counts": 0.7327
+      },
+      {
+        "conf": 0.9,
+        "mean_abs_count_error_per_image": 0.59,
+        "images_with_exact_counts": 0.6175
+      }
+    ],
+    "test_clean": {
+      "conf": 0.65,
+      "images": 206,
+      "mean_abs_count_error_per_image": 0.165,
+      "images_with_exact_counts": 0.8641,
+      "per_class_mean_abs_error": {
+        "buffalo": 0.029,
+        "elephant": 0.049,
+        "rhino": 0.034,
+        "zebra": 0.053
+      },
+      "total_animals_true": {
+        "buffalo": 52,
+        "elephant": 96,
+        "zebra": 126,
+        "rhino": 67
+      },
+      "total_animals_predicted": {
+        "buffalo": 48,
+        "elephant": 94,
+        "zebra": 117,
+        "rhino": 62
+      }
+    },
+    "test_clean_at_default_0.25": {
+      "conf": 0.25,
+      "images": 206,
+      "mean_abs_count_error_per_image": 0.267,
+      "images_with_exact_counts": 0.8398,
+      "per_class_mean_abs_error": {
+        "buffalo": 0.034,
+        "elephant": 0.078,
+        "rhino": 0.029,
+        "zebra": 0.126
+      },
+      "total_animals_true": {
+        "buffalo": 52,
+        "elephant": 96,
+        "zebra": 126,
+        "rhino": 67
+      },
+      "total_animals_predicted": {
+        "buffalo": 57,
+        "elephant": 106,
+        "zebra": 148,
+        "rhino": 63
+      }
+    }
+  },
+  "error_analysis_test_clean": {
+    "conf": 0.65,
+    "recall_iou50_by_class_and_size": {
+      "buffalo / large (>10%)": {
+        "recall": 0.957,
+        "boxes": 47
+      },
+      "buffalo / medium (1-10%)": {
+        "recall": 0.4,
+        "boxes": 5
+      },
+      "elephant / large (>10%)": {
+        "recall": 0.985,
+        "boxes": 65
+      },
+      "elephant / medium (1-10%)": {
+        "recall": 0.923,
+        "boxes": 26
+      },
+      "elephant / small (<1%)": {
+        "recall": 0.4,
+        "boxes": 5
+      },
+      "rhino / large (>10%)": {
+        "recall": 0.963,
+        "boxes": 54
+      },
+      "rhino / medium (1-10%)": {
+        "recall": 0.692,
+        "boxes": 13
+      },
+      "zebra / large (>10%)": {
+        "recall": 0.901,
+        "boxes": 81
+      },
+      "zebra / medium (1-10%)": {
+        "recall": 0.857,
+        "boxes": 42
+      },
+      "zebra / small (<1%)": {
+        "recall": 0.667,
+        "boxes": 3
+      }
+    },
+    "class_confusions": {
+      "rhino -> elephant": 1,
+      "rhino -> buffalo": 1
+    },
+    "confident_detections_without_label": [
+      {
+        "image": "2 (290).jpg",
+        "pred": "zebra",
+        "conf": 0.862
+      },
+      {
+        "image": "2 (78).jpg",
+        "pred": "elephant",
+        "conf": 0.706
+      },
+      {
+        "image": "3 (256).jpg",
+        "pred": "rhino",
+        "conf": 0.863
+      },
+      {
+        "image": "4 (105).jpg",
+        "pred": "elephant",
+        "conf": 0.868
+      },
+      {
+        "image": "4 (138).jpg",
+        "pred": "zebra",
+        "conf": 0.743
+      }
+    ]
+  }
+}

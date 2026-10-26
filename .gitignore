@@ -4,3 +4,8 @@ datasets/
 *.mp4
 .ipynb_checkpoints/
 .venv/
+datasets/
+reports/_splits/
+__pycache__/
+.pytest_cache/
+*.onnx.tmp

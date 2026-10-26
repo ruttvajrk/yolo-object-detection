@@ -1,0 +1,9 @@
+.git
+runs
+files
+datasets
+*.zip
+*.ipynb
+*.pt
+reports/_splits
+tests

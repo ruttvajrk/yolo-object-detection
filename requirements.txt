@@ -1,2 +1,11 @@
+# Training, evaluation and export
 ultralytics>=8.1.0
 opencv-python>=4.8.0
+onnx>=1.16
+onnxruntime>=1.18
+# API and counting tool
+fastapi>=0.110
+uvicorn>=0.29
+python-multipart>=0.0.9
+pillow>=10
+numpy>=1.24

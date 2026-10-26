@@ -1,0 +1,31 @@
+{
+  "onnx_file_mb": 12.2,
+  "pt_file_mb": 6.2,
+  "images": 100,
+  "conf": 0.25,
+  "handwritten_vs_ultralytics_same_onnx": {
+    "boxes_matched_iou90": "158/160",
+    "images_with_identical_counts": "99/100"
+  },
+  "handwritten_onnx_vs_pytorch_model": {
+    "boxes_matched_iou90": "154/161",
+    "images_with_identical_counts": "98/100",
+    "why_not_identical": "PyTorch predict letterboxes to a minimal rectangle; the static ONNX model always takes a 640x640 square"
+  },
+  "test_clean_map": {
+    "pytorch": {
+      "mAP50": 0.968,
+      "mAP50_95": 0.819
+    },
+    "onnx": {
+      "mAP50": 0.967,
+      "mAP50_95": 0.809
+    }
+  },
+  "cpu_latency_ms_median": {
+    "pytorch_ultralytics": 74.5,
+    "onnxruntime_handwritten_postprocess": 59.5
+  },
+  "cpu": "x86_64",
+  "note": "Measured in a 2-vCPU cloud sandbox; numbers on another machine will differ."
+}
